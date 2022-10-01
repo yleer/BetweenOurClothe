@@ -31,35 +31,50 @@ class UsedMarketViewController: UIViewController {
 
 
 extension UsedMarketViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        50
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recommend cell", for: indexPath) as? RecommendCollectionViewCell else { return UICollectionViewCell() }
     
-
-        print("GSdf")
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
+        if indexPath.section == 0 {
+            let header =  collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RecommendCollectionHeader.identifier, for: indexPath)
+            //        if kind == UICollectionView.elementKindSectionHeader {
+            //
+            //        } else {
+            //
+            //        }
+            
+            return header
+        } else {
+//            return UICollectionReusableView()
+        }
+        
+        
         let header =  collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RecommendCollectionHeader.identifier, for: indexPath)
         
-        
-//        if kind == UICollectionView.elementKindSectionHeader {
-//
-//        } else {
-//
-//        }
-        
         return header
+        
+        
+
+        
+        
     }
 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        CGSize(width: 200, height: 400)
+        CGSize(width: self.view.frame.width, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: (self.view.frame.width / 3) - 40, height: (self.view.frame.width / 3) - 40)
     }
 
 }

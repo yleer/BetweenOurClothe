@@ -10,9 +10,13 @@ import UIKit
 class UsedMarketCollectionView: UIView {
     
     let usedMarketCollectionView: UICollectionView = {
+        
+        let collectionViewLayer = UICollectionViewFlowLayout()
+        collectionViewLayer.sectionInset = UIEdgeInsets(top: 5.0, left: 20.0, bottom: 5.0, right: 20.0)
+        
         let collectionView = UICollectionView(
             frame: CGRect(x: 0, y: 0, width: 0, height: 0),
-            collectionViewLayout: UICollectionViewFlowLayout()
+            collectionViewLayout: collectionViewLayer
         )
         
         collectionView.register(
