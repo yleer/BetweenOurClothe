@@ -37,6 +37,9 @@
 		CEF3630D28E7D8AC007ECE87 /* UsedMarketCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3630C28E7D8AC007ECE87 /* UsedMarketCollectionView.swift */; };
 		CEF3630F28E7E013007ECE87 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3630E28E7E013007ECE87 /* RecommendCollectionViewCell.swift */; };
 		CEF3631128E7E10C007ECE87 /* RecommendCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3631028E7E10C007ECE87 /* RecommendCollectionHeader.swift */; };
+		CEF3631328E814B2007ECE87 /* UsedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3631228E814B2007ECE87 /* UsedDetailViewController.swift */; };
+		CEF3631628E814D4007ECE87 /* UsedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3631528E814D4007ECE87 /* UsedDetailView.swift */; };
+		CEF3631828E8222B007ECE87 /* UsedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3631728E8222B007ECE87 /* UsedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		CEF3630C28E7D8AC007ECE87 /* UsedMarketCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedMarketCollectionView.swift; sourceTree = "<group>"; };
 		CEF3630E28E7E013007ECE87 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEF3631028E7E10C007ECE87 /* RecommendCollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionHeader.swift; sourceTree = "<group>"; };
+		CEF3631228E814B2007ECE87 /* UsedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDetailViewController.swift; sourceTree = "<group>"; };
+		CEF3631528E814D4007ECE87 /* UsedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedDetailView.swift; sourceTree = "<group>"; };
+		CEF3631728E8222B007ECE87 /* UsedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 				88EF100028D1E2B5003C8189 /* ShopViewController.swift */,
 				88EF100228D1E2D2003C8189 /* ShopView.swift */,
 				88EF100428D1E336003C8189 /* ShopViewTableViewCell.swift */,
+				CEF3631428E814C6007ECE87 /* UsedDetail */,
 			);
 			path = ClothRecommend;
 			sourceTree = "<group>";
@@ -182,6 +189,16 @@
 				CEF3631028E7E10C007ECE87 /* RecommendCollectionHeader.swift */,
 			);
 			path = UsedMarket;
+			sourceTree = "<group>";
+		};
+		CEF3631428E814C6007ECE87 /* UsedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CEF3631228E814B2007ECE87 /* UsedDetailViewController.swift */,
+				CEF3631528E814D4007ECE87 /* UsedDetailView.swift */,
+				CEF3631728E8222B007ECE87 /* UsedImageCell.swift */,
+			);
+			path = UsedDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,13 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF3631328E814B2007ECE87 /* UsedDetailViewController.swift in Sources */,
 				88EF100528D1E336003C8189 /* ShopViewTableViewCell.swift in Sources */,
+				CEF3631828E8222B007ECE87 /* UsedImageCell.swift in Sources */,
 				88EF0FE628D1722A003C8189 /* MainFeedViewController.swift in Sources */,
 				88C70E2F28D89D6800ABCB3F /* WelcomeViewController.swift in Sources */,
 				CEF3630F28E7E013007ECE87 /* RecommendCollectionViewCell.swift in Sources */,
 				CEF3630628E7D035007ECE87 /* AddPostViewController.swift in Sources */,
 				88C4D6B228D9CA2600D93575 /* RegisterServiceViewController.swift in Sources */,
 				CEF3630D28E7D8AC007ECE87 /* UsedMarketCollectionView.swift in Sources */,
+				CEF3631628E814D4007ECE87 /* UsedDetailView.swift in Sources */,
 				88C70E3628D8A06E00ABCB3F /* RegisterView.swift in Sources */,
 				88C4D6B428D9CA4E00D93575 /* RegisterServiceView.swift in Sources */,
 				88EF0FFB28D174B4003C8189 /* MainFeedTableViewCell.swift in Sources */,
