@@ -13,9 +13,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         let feedVC = MainFeedViewController()
-        let usedVC = MainFeedViewController()
-        
-//        let addPostTab = 
+        let usedVC = UsedMarketViewController()
         
         let DmVC = MainFeedViewController()
         let myClothee = MainFeedViewController()
