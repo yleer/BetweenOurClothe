@@ -47,9 +47,8 @@ extension UsedMarketViewController: UICollectionViewDelegate, UICollectionViewDa
         if indexPath.section == 0 {
             let header =  collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RecommendCollectionHeader.identifier, for: indexPath)
             //        if kind == UICollectionView.elementKindSectionHeader {
-            //
             //        } else {
-            //
+            print("SDf")
             //        }
             
             return header
@@ -80,6 +79,7 @@ extension UsedMarketViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = UsedDetailViewController()
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
